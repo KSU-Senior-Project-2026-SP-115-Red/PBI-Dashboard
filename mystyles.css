@@ -1,5 +1,3 @@
-/* style.css */
-
 * {
     margin: 0;
     padding: 0;
@@ -95,14 +93,15 @@ main {
     border: 3px solid #b00000;
 }
 
-.member h3 {
-    margin: 0;
-    font-size: 1.2rem;
+.member h3 a {
+    color: #222;              
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.member p {
-    margin: 5px 0 0 0;
-    color: #555;
+.member h3 a:hover {
+    text-decoration: underline;
 }
 
 .resources {
