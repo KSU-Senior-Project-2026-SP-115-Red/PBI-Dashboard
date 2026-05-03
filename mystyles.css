@@ -1,5 +1,3 @@
-/* style.css */
-
 * {
     margin: 0;
     padding: 0;
@@ -69,13 +67,20 @@ main {
 .team {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 60px;              /* spacing between the two people */
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
 
 .member {
-    text-align: center;
+    display: flex;          /* puts image + text side-by-side */
+    align-items: center;    /* vertically centers text with image */
+    gap: 20px;              /* spacing between image and text */
+    background: #fafafa;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    min-width: 320px;
 }
 
 .member img {
@@ -83,8 +88,17 @@ main {
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    border: 4px solid #b00000;
-    margin-bottom: 15px;
+    border: 3px solid #b00000;
+}
+
+.member h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.member p {
+    margin: 5px 0 0 0;
+    color: #555;
 }
 
 .content-box {
